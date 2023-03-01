@@ -1,0 +1,25 @@
+-- Ingreso de datos
+insert into Vacuna values (1,'Astrazeneca')
+insert into Vacuna values (2,'Moderna')
+insert into Vacuna values (3,'Pfizer')
+insert into Vacuna values (4,'Sputnik')
+
+insert into Paciente values (1381902,'Pedro','Lopez',23)
+insert into Paciente values (4178739,'Carla','Gomez',56)
+insert into Paciente values (9309012,'Javier','Ledesma',39)
+insert into Paciente values (3892129,'Maria','Alvarez',48)
+insert into Paciente values (4738974,'Fernanda','Acevedo',49)
+insert into Paciente values (2361872,'Nicolas','Jimenez',36)
+
+insert into CentroVacunacion values (1233,'Miraflores','Ciudad de Guatemala')
+insert into CentroVacunacion values (1234,'IGSS','Monserrat, Calzada San Juan')
+insert into CentroVacunacion values (1235,'Roosevelt','Ciudad de Guatemala')
+insert into CentroVacunacion values (1236,'PeriRoosevelt','Zona 8')
+insert into CentroVacunacion values (1237,'Centro de Salud','El Milagro Zona 6')
+
+insert into Dosis values (3211,4178739,3,1236,'2022-05-14')
+insert into Dosis values (3212,1381902,2,1233,'2022-07-28')
+insert into Dosis values (3213,9309012,3,1234,'2021-02-08')
+insert into Dosis values (3214,3892129,1,1235,'2021-09-20')
+insert into Dosis values (3215,4738974,4,1237,'2022-01-03')
+insert into Dosis values (3216,2361872,1,1233,'2021-12-27')

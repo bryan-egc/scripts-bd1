@@ -1,0 +1,6 @@
+--21.Casos tamizados por Departamento, municipio, semana y año
+SELECT Count(*) as 'Tamizados', DEP.DESCRIPCION, MUN.DESCRIPCION, DATEPART(wk, Fecha) AS 'Semana', Year(Fecha) AS 'Año'
+FROM DEPARTAMENTO DEP INNER JOIN MUNICIPIO MUN ON DEP.ID_DEPARTAMENTO = MUN.ID_DEPARTAMENTO 
+INNER JOIN CASOS_T CT ON CT.ID_MUNICIPIO = MUN.ID_MUNICIPIO
+Group by DEP.DESCRIPCION, MUN.DESCRIPCION, DATEPART(wk, Fecha), Year(Fecha)
+Order by Year(Fecha), DATEPART(wk, Fecha)
